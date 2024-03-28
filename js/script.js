@@ -42,8 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (nameInput.value.trim() === "" || emailInput.value.trim() === "" || selectInput.value === "-") {
             alert("Please fill in all required fields.");
         } else {
-            const name = nameInput.value.trim();
-            window.location.href = "welcome.html?name=" + encodeURIComponent(name);
+            alert("Successfully Submitted! Our Support Will Assist You Within 24 Hours");
         }
     });
 
@@ -52,6 +51,12 @@ document.addEventListener("DOMContentLoaded", function() {
         formSection.scrollIntoView({ behavior: "smooth" });
     });
 });
+
+
+    gabungButton.addEventListener("click", function() {
+        const formSection = document.querySelector(".form-input");
+        formSection.scrollIntoView({ behavior: "smooth" });
+    });
 
 document.addEventListener("DOMContentLoaded", function() {
     var callUsButton = document.querySelector(".contact-button");
